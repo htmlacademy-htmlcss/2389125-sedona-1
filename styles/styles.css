@@ -43,15 +43,19 @@ body {
   background-color: #FFFFFF;
 }
 
+.breadcrumbs-link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 .advantages-list,
 .recommendation-list,
 .catalog-filter-list {
   list-style: none;
 }
 
-.advantages-title,
-.recommendation-item-title,
-.hotel-search-title {
+.title {
+  color: #000000;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -68,6 +72,7 @@ body {
 }
 
 .advantages-item-title {
+  color: #000000;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -75,13 +80,22 @@ body {
   text-align: center;
 }
 
-.advantages-description {
-  text-align: center;
-}
-
 .advantages-item-primary {
   color: #FFFFFF;
   background-color: #82B3D3;
+}
+
+.advantages-item-primary .advantages-item-title {
+  color: #FFFFFF;
+}
+
+.advantages-item-secondary {
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.20);
+}
+
+.advantages-description {
+  text-align: center;
 }
 
 .recommendation-item-primary {
@@ -127,8 +141,6 @@ body {
   color: #FFFFFF;
 }
 
-.button-subscribe {}
-
 .hotel-search {
   text-align: center;
 }
@@ -141,8 +153,6 @@ body {
 .subscribe-form {
   text-align: center;
 }
-
-/* Каталог */
 
 .inner-header-title {
   font-size: 60px;
@@ -168,6 +178,7 @@ body {
 }
 
 .button-submit {
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -177,12 +188,21 @@ body {
 }
 
 .button-reset {
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: transparent;
+}
+
+.catalog-hotel {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 .product-list,
@@ -206,6 +226,7 @@ body {
 
 .button-more,
 .navigation-button {
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -216,6 +237,7 @@ body {
 }
 
 .button-favorites {
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -225,6 +247,7 @@ body {
 }
 
 .button-favorites-green {
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -273,10 +296,19 @@ body {
 }
 
 .button-subscribe {
-  background-color: #82B3D3;
-  color: #FFFFFF;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.phone-link {
+  color: #000000;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
