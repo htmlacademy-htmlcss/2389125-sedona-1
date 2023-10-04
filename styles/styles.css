@@ -468,10 +468,12 @@ body {
 }
 
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   margin: 0;
   padding: 0;
+  margin-bottom: 81px;
 }
 
 .product-list,
@@ -479,23 +481,28 @@ body {
   list-style: none;
 }
 
-.pagination-item:not(:last-child) {
-  margin-right: 8px;
-}
-
 .product-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 20px;
   padding: 20px;
   border-radius: 4px;
   border: 1px solid #E6E6E6;
 }
 
-.product-card-description {
-  margin: 0;
-  margin-bottom: 16px;
+.product-card-price {
+  justify-self: end;
 }
 
-.product-card-image {
-  margin-bottom: 20px;
+.product-card-link {
+  display: block;
+  height: 212px;
+  grid-column: 1 / -1;
+}
+
+.product-card-description,
+.product-card-price {
+  margin: 0;
 }
 
 .product-card-title {
@@ -503,8 +510,8 @@ body {
   font-weight: 700;
   line-height: 28px;
   color: #000000;
-  margin-top: 0;
-  margin-bottom: 16px;
+  margin: 0;
+  grid-column: 1/-1;
 }
 
 .product-rating {
@@ -513,13 +520,17 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   width: 140px;
+  margin: 0;
   padding: 9px;
   text-align: center;
   border-radius: 4px;
+  align-self: end;
 }
 
 .pagination {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 60px);
+  gap: 8px;
   margin: 0;
   padding: 0;
 }
@@ -534,6 +545,13 @@ body {
   color: #FFFFFF;
   background-color: #756157;
   text-decoration: none;
+  padding: 8px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.navigation-button {
+  padding: 8px 50px;
 }
 
 .button-favorites {
@@ -544,6 +562,10 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #82B3D3;
+  padding: 8px;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
 }
 
 .button-favorites-green {
@@ -554,9 +576,19 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #7DB54F;
+  padding: 8px;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
 }
 
 .pagination-link {
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding: 12px;
+  border-radius: 4px;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
