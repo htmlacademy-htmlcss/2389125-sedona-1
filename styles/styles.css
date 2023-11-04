@@ -55,7 +55,7 @@ body {
 .navigation {
   display: flex;
   padding-right: 70px;
-  padding-left: 240px;
+  padding-left: 238px;
   position: relative;
 }
 
@@ -117,13 +117,15 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   padding: 22px 12px;
+  width: 44px;
+  height: 64px;
 }
 
 .hero {
   background-image: url("../images/divider.svg"), url("../images/background-photo/mountains-bg.jpg");
   text-align: center;
   padding-top: 51px;
-  padding-bottom: 82px;
+  padding-bottom: 77px;
   background-repeat: no-repeat;
   background-position: center bottom -1px, center;
   background-color: #425c72;
@@ -135,6 +137,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   padding: 22px 12px;
+  width: 44px;
+  height: 64px;
 }
 
 .navigation-link-active::after {
@@ -152,9 +156,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  top: -10px;
-  left: 10px;
+  position: absolute;
+  top: 11px;
+  right: 4px;
   font-weight: 400;
   color: #ffffff;
   background-color: #7db54f;
@@ -370,6 +374,9 @@ body {
 }
 
 .advantages-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   padding: 103px 85px;
   height: 100%;
@@ -446,7 +453,8 @@ body {
   width: 75px;
   height: 77px;
   background-repeat: no-repeat;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
+  background-position: center;
 }
 
 .recommendations-item-housing::before {
@@ -544,7 +552,7 @@ body {
   line-height: 26px;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 54px;
+  margin-bottom: 56px;
 }
 
 .subscribe-title-catalog {
@@ -589,7 +597,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 70px 30px;
+  padding: 43px 70px 33px;
 }
 
 .subscribe {
@@ -638,6 +646,10 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal-close {
+  display: none;
 }
 
 .modal {
@@ -1216,8 +1228,10 @@ body {
 }
 
 .navigation-button {
-  padding: 8px 50px;
+  padding: 8px;
   margin-left: 20px;
+  width: 160px;
+  display: block;
 }
 
 .navigation-button:hover,
@@ -1352,7 +1366,7 @@ body {
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 0 195px 0 195px;
+  padding: 0 20px 0 20px;
 }
 
 .phone-link:hover,
