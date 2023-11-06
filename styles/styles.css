@@ -35,6 +35,7 @@ body {
   font-weight: 400;
   color: #333333;
   background-color: #f2f2f2;
+  min-width: 1200px;
 }
 
 .visually-hidden {
@@ -66,6 +67,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   margin-bottom: 40px;
@@ -326,7 +328,7 @@ body {
 .advantages-title {
   margin-left: auto;
   margin-right: auto;
-  width: 620px;
+  width: 630px;
   margin-top: 0;
   margin-bottom: 25px;
 }
@@ -349,7 +351,7 @@ body {
   display: flex;
   align-items: center;
   width: calc(100% / 3);
-  height: 385px;
+  min-height: 385px;
 }
 
 .advantages-item-img {
@@ -380,6 +382,7 @@ body {
   text-align: center;
   padding: 103px 85px;
   height: 100%;
+  width: 400px;
 }
 
 .advantages-description-title,
@@ -537,7 +540,8 @@ body {
   text-align: center;
 }
 
-.subscribe-title {
+.subscribe-title,
+.subscribe-title-catalog {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -547,7 +551,12 @@ body {
   margin-bottom: 20px;
 }
 
-.subscribe-description {
+.subscribe-title-catalog {
+  color: #000000;
+}
+
+.subscribe-description,
+.subscribe-description-catalog {
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
@@ -555,22 +564,8 @@ body {
   margin-bottom: 56px;
 }
 
-.subscribe-title-catalog {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-  text-align: center;
-  color: #000000;
-  text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 20px;
-}
-
 .subscribe-description-catalog {
-  font-size: 22px;
-  line-height: 26px;
   color: #333333;
-  margin: 0;
   margin-bottom: 54px;
 }
 
@@ -584,7 +579,7 @@ body {
 
 .input-email {
   font-family: inherit;
-  width: 100%;
+  width: 452px;
   height: 52px;
   border-radius: 4px 0 0 4px;
   border: none;
@@ -603,6 +598,7 @@ body {
 .subscribe {
   background-image: url("../images/background-photo/subcribe-bg.jpg");
   background-size: cover;
+  background-color: #3c5c67;
 }
 
 .social-list {
@@ -611,6 +607,7 @@ body {
   width: 142px;
   margin: 0;
   padding: 0;
+  flex-shrink: 0;
 }
 
 .social-link {
@@ -803,6 +800,7 @@ body {
   background-size: cover;
   color: #ffffff;
   padding: 35px 70px 70px;
+  background-color: #303940;
 }
 
 .select-control {
@@ -820,10 +818,10 @@ body {
   background-image: url("../images/arrow/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 17px center;
+  background-color: #ffffff;
 }
 
-.select-control:hover,
-.select-control:focus {
+.select-control:hover {
   border-color: #68a2ca;
 }
 
@@ -864,6 +862,7 @@ body {
 
 .sorting-inner {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 70px;
 }
 
@@ -1046,7 +1045,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 20px;
+  right: 21px;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -1063,6 +1062,7 @@ body {
   padding: 12px 20px;
   border: none;
   border-radius: 4px 0 0 4px;
+  -moz-appearance: textfield;
 }
 
 .price-input-left {
@@ -1351,6 +1351,7 @@ body {
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
+  width: 232px;
 }
 
 .button-subscribe:hover,
@@ -1491,6 +1492,7 @@ body {
   padding-left: 2px;
   padding-right: 2px;
   text-align: center;
+  -moz-appearance: textfield;
 }
 
 .modal-form-label-children {
