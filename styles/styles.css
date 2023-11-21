@@ -102,6 +102,14 @@ body {
   padding: 20px 16px;
 }
 
+.navigation-link:hover {
+  opacity: 0.6;
+}
+
+.navigation-link:active {
+  opacity: 0.3;
+}
+
 .navigation-link:focus-visible {
   z-index: 2;
 }
@@ -323,6 +331,8 @@ body {
 
 .advantages-head {
   margin-bottom: 90px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .advantages-title {
@@ -434,6 +444,8 @@ body {
 
 .recommendation-head {
   margin-bottom: 64px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .recommendation-list {
@@ -1199,9 +1211,30 @@ body {
   line-height: 36px;
 }
 
-.pagination-next {
-  background-color: transparent;
+.all-pagination {
+  display: block;
+  font-family: inherit;
+  width: 60px;
+  height: 60px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
   color: #000000;
+  padding: 17px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+}
+
+.all-pagination:hover,
+.all-pagination:focus {
+  background-color: #68a2ca;
+}
+
+.all-pagination:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-link:hover,
